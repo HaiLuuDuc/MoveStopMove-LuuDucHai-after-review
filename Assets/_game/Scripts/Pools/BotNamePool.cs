@@ -1,0 +1,53 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BotNamePool : MonoBehaviour
+{
+    [SerializeField] private GameObject botNamePrefab;
+    [SerializeField] private GameObject canvas;
+    private List<GameObject> pool = new List<GameObject>();
+    public List<string> nameList = new List<string>();
+    public int poolSize;
+
+    //singleton
+    public static BotNamePool instance;
+    private void Awake()
+    {
+        instance = this; 
+    }
+    public void OnInit()
+    {
+        canvas = GameObject.FindGameObjectWithTag(Constant.CANVAS_NAME);
+        for (int i = 0; i < poolSize; i++)
+        {
+            GameObject obj = Instantiate(botNamePrefab);
+            obj.transform.SetParent(canvas.gameObject.transform);
+            obj.SetActive(false);
+            pool.Add(obj);
+        }
+    }
+
+    public GameObject GetObject()
+    {
+        foreach (GameObject obj in pool)
+        {
+            if (!obj.activeSelf)
+            {
+                obj.SetActive(true);
+                return obj;
+            }
+        }
+
+        // If we get here, all objects are in use
+        GameObject newObj = Instantiate(botNamePrefab);
+        newObj.transform.SetParent(canvas.gameObject.transform);
+        pool.Add(newObj);
+        return newObj;
+    }
+
+    public void ReturnToPool(GameObject obj)
+    {
+        obj.SetActive(false);
+    }
+}

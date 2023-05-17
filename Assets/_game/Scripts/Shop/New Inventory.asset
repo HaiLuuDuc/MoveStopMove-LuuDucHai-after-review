@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c6d0030a8d2e74589c60787cdab10f, type: 3}
+  m_Name: New Inventory
+  m_EditorClassIdentifier: 
+  weapons:
+  - {fileID: 1972324178006004042, guid: fb0879d7dfe7a504292da9cf36ccbe91, type: 3}
+  - {fileID: 5582565937371956394, guid: 9ee627067c52a544eb03755ed514ec93, type: 3}
+  - {fileID: 6188437571676213075, guid: 6264f1d4cd61f7b45966350ccffd889a, type: 3}
+  hats:
+  - {fileID: 651525434245934042, guid: 598ab553c2915614eae0f613e7ffd1a8, type: 3}
+  - {fileID: 3453080811621480599, guid: 29893adaa454c0941875f34d36fd8b38, type: 3}
+  - {fileID: 2495007030606467508, guid: e0f05f4aa3ba4c64494e3ddb1edaae73, type: 3}
+  - {fileID: 284827350180290219, guid: 53272d918698a274f9e116a73fb8696a, type: 3}
+  - {fileID: 3225537340271795271, guid: 6705c269e38187c4fb0b21e3f9aa8101, type: 3}
+  - {fileID: 206899504985990811, guid: a0a6545f9ed1ad84095bb34250824bd0, type: 3}
+  - {fileID: 6152813184057907843, guid: 10eeae0f5d6f91042a8f96b22a450817, type: 3}
+  - {fileID: 6135237398076956966, guid: 60c3c9aeb26920448b39e00c3751dd72, type: 3}
+  - {fileID: 7340866781542211656, guid: e669631230445134794c20f0c203631d, type: 3}
+  pants:
+  - {fileID: 2100000, guid: 69d40b77bfbb128458aaf7928efbba73, type: 2}
+  - {fileID: 2100000, guid: 157dd57c9570be6479f6cf8ae19d664c, type: 2}
+  - {fileID: 2100000, guid: 45c0e67af43d2e042ae19473284ef01e, type: 2}
+  - {fileID: 2100000, guid: 4fcecf53cc828224694433104f4f5c16, type: 2}
+  - {fileID: 2100000, guid: a49ac0133e9430347b6eacfe56264b56, type: 2}
+  - {fileID: 2100000, guid: 621264e27cf0bd04885f948473f8239d, type: 2}
+  - {fileID: 2100000, guid: de95e3808aa6b924e8278e68c51d5ac7, type: 2}
+  - {fileID: 2100000, guid: b58dd57520229984c80248bb88665c43, type: 2}
+  - {fileID: 2100000, guid: 1fa52627e293d8f459f5f8f9dcba3df4, type: 2}
+  shields:
+  - {fileID: 7739156585270111611, guid: 87fcc61031c2e8043955fc3d363dabe6, type: 3}
+  - {fileID: 8071899920967570764, guid: 60be8f493e0361e4eafecac7f26bcf2f, type: 3}
+  fullSetDatas:
+  - {fileID: 11400000, guid: d7afed82dfbe41947b7b06e3b79d70a9, type: 2}
+  - {fileID: 11400000, guid: 90ffc177c3137de4d94b3d1dc527f87f, type: 2}
+  - {fileID: 11400000, guid: ea0d87dc84c022d4ba6b5d1be3c1c1d2, type: 2}
